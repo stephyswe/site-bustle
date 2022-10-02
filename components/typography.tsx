@@ -16,6 +16,12 @@ export const Title = ({ className = "xpu", children }: any) => {
   return <p className={cx(`EIU ${className}`)}>{children}</p>;
 };
 
+export const TitleTime = ({ title }: any) => (
+  <div className="qc5">
+    <p>{title}</p>
+  </div>
+);
+
 export const TitleContentTwo = ({ children }: any) => (
   <p className="Eby">{children}</p>
 );

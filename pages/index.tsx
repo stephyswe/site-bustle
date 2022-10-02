@@ -1,25 +1,31 @@
 import type { NextPage } from "next";
 import { Header } from "../components/layout/header";
-import { ContentTop } from "../components/content/top";
-import { ContentFirst } from "../components/content/one";
-import { ContentTwo } from "../components/content/two";
-import { ContentThree } from "../components/content/three";
-import { ContentFour } from "../components/content/four";
-import { ContentFive } from "../components/content/five";
 import { allData } from "../constants/data";
+import {
+  SectionFive,
+  SectionFour,
+  SectionPosters,
+  SectionSeven,
+  SectionSix,
+  SectionSpread,
+  SectionTwo,
+} from "../components/sections";
+import { Logo } from "../components/logo";
 
 const Home: NextPage = () => {
-  const { first, second, third, four, five } = allData;
+  const { first, second, third, four, five, six, seven } = allData;
   return (
     <div>
       <Header />
       <div>
-        <ContentTop />
-        <ContentFirst data={first} cardNum={161523783} />
-        <ContentTwo data={second} />
-        <ContentThree data={third} />
-        <ContentFour data={four} />
-        <ContentFive data={five} />
+        <Logo />
+        <SectionSpread data={first} cardNum={161523783} />
+        <SectionTwo data={second} />
+        <SectionPosters data={third} />
+        <SectionFour data={four} />
+        <SectionFive data={five} />
+        <SectionSix data={six} />
+        <SectionSeven data={five} />
       </div>
     </div>
   );
