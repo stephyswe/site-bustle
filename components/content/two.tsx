@@ -1,5 +1,5 @@
 import { SubtitleTwo, Title2ContentTwo, TitleContentTwo } from "../typography";
-import { Author, InputTwo, ItemImage } from "./items";
+import { Author, InputTwo, ItemImage, ItemImageOnlyImage } from "./items";
 import cx from "classnames";
 import { useState } from "react";
 
@@ -7,13 +7,7 @@ const ContentTwoCard = ({
   onClickHandler,
   num,
   label,
-  data: {
-    title,
-    subtitle,
-    author,
-    image: { src },
-    links,
-  },
+  data: { title, subtitle, author, image, links },
 }: any) => {
   return (
     <>
@@ -43,7 +37,11 @@ const ContentTwoCard = ({
             </div>
             <div className="yMG">
               <div className="vmZ Dsq">
-                <ItemImage src={src} />
+                <ItemImageOnlyImage
+                  image={image}
+                  sizesNum="540"
+                  overwriteCompress="540b"
+                />
               </div>
             </div>
           </a>

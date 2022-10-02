@@ -4,7 +4,7 @@ import { subtle } from "crypto";
 import { urlSite } from "../../constants/data";
 import { Section } from "../section";
 import { Subtitle, Tag, Title } from "../typography";
-import { Author, ItemImage } from "./items";
+import { Author, ItemImage, ItemImageOnlyImage } from "./items";
 import { ContentMiddleCard } from "./one";
 
 const ContentFiveHeader = ({ title }: any) => (
@@ -49,30 +49,10 @@ const ContentFiveCard = ({
     <div className="O-E ACN">
       {image?.src ? (
         <div className="vmZ tW7 ap2" style={style}>
-          <ItemImage
-            src={
-              urlSite +
-              image.src +
-              "?w=216&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress"
-            }
-            alt={image.alt}
-            className="EdX"
-            decoding="async"
-          />
+          <ItemImageOnlyImage overwriteCompress="216b" image={image} />
         </div>
       ) : null}
-      {videoSrc ? (
-        <div className="Rfb tW7">
-          <video
-            autoPlay={true}
-            className="kOK"
-            loop={true}
-            playsInline={false}
-          >
-            <source src={videoSrc} />
-          </video>
-        </div>
-      ) : null}
+      {videoSrc ? <ItemVideo videoSrc={videoSrc} /> : null}
     </div>
     <Tag className="R-A">{tag}</Tag>
     <Title className="k84">{title}</Title>
@@ -82,6 +62,14 @@ const ContentFiveCard = ({
       {author ? <Author className="xaa" data={author} /> : null}
     </div>
   </a>
+);
+
+const ItemVideo = ({ videoSrc }: any) => (
+  <div className="Rfb tW7">
+    <video autoPlay={true} className="kOK" loop={true} playsInline={false}>
+      <source src={videoSrc} />
+    </video>
+  </div>
 );
 
 const contentMiddleData = {
@@ -97,25 +85,15 @@ const contentMiddleData = {
 };
 
 const ContentFiveSectionMiddle = ({
-  data: {
-    subtitle,
-    title,
-    href,
-    style,
-    author,
-    image: { src },
-  },
+  data: { subtitle, title, href, style, author, image },
 }: any) => (
   <a className="Fh8 uji" href={href}>
     <div className="O-E ACN">
       <div className="vmZ tW7 ap2" style={style}>
-        <ItemImage
-          src={
-            src +
-            "?w=492&amp;h=492&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress"
-          }
-          srcSet="https://imgix.bustle.com/uploads/image/2022/9/27/b96879c7-089b-4946-acf0-dcc42a7f4e2a-paulmescal_1.jpg?w=374&amp;h=374&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress 374w, https://imgix.bustle.com/uploads/image/2022/9/27/b96879c7-089b-4946-acf0-dcc42a7f4e2a-paulmescal_1.jpg?w=374&amp;h=374&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress&amp;q=50&amp;dpr=2 748w, https://imgix.bustle.com/uploads/image/2022/9/27/b96879c7-089b-4946-acf0-dcc42a7f4e2a-paulmescal_1.jpg?w=492&amp;h=492&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress 492w, https://imgix.bustle.com/uploads/image/2022/9/27/b96879c7-089b-4946-acf0-dcc42a7f4e2a-paulmescal_1.jpg?w=492&amp;h=492&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress&amp;q=50&amp;dpr=2 984w, https://imgix.bustle.com/uploads/image/2022/9/27/b96879c7-089b-4946-acf0-dcc42a7f4e2a-paulmescal_1.jpg?w=452&amp;h=452&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress 452w, https://imgix.bustle.com/uploads/image/2022/9/27/b96879c7-089b-4946-acf0-dcc42a7f4e2a-paulmescal_1.jpg?w=452&amp;h=452&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress&amp;q=50&amp;dpr=2 904w"
-          sizes="(min-width:1025px) 492px, (min-width:768px) 452px, 374px"
+        <ItemImageOnlyImage
+          image={image}
+          sizesNum="374"
+          overwriteCompress="492"
         />
       </div>
     </div>

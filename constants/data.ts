@@ -7,8 +7,6 @@ const ContentLeftData = {
   author: ["Lindsay Zoladz", "Beau Grealy", "Tiffany Reid"],
   image: {
     src: "/2022/9/19/1e83cea8-1e58-411e-8a7e-83157505102e-shaniatwain_1_header.jpg",
-    srcSet:
-      "https://imgix.bustle.com/uploads/image/2022/9/19/1e83cea8-1e58-411e-8a7e-83157505102e-shaniatwain_1_header.jpg?w=374&amp;h=374&amp;fit=crop&amp;crop=focalpoint&amp;auto=format%2Ccompress&amp;fp-x=0.692&amp;fp-y=0.2978 374w, https://imgix.bustle.com/uploads/image/2022/9/19/1e83cea8-1e58-411e-8a7e-83157505102e-shaniatwain_1_header.jpg?w=374&amp;h=374&amp;fit=crop&amp;crop=focalpoint&amp;auto=format%2Ccompress&amp;q=50&amp;fp-x=0.692&amp;fp-y=0.2978&amp;dpr=2 748w, https://imgix.bustle.com/uploads/image/2022/9/19/1e83cea8-1e58-411e-8a7e-83157505102e-shaniatwain_1_header.jpg?w=492&amp;h=492&amp;fit=crop&amp;crop=focalpoint&amp;auto=format%2Ccompress&amp;fp-x=0.692&amp;fp-y=0.2978 492w, https://imgix.bustle.com/uploads/image/2022/9/19/1e83cea8-1e58-411e-8a7e-83157505102e-shaniatwain_1_header.jpg?w=492&amp;h=492&amp;fit=crop&amp;crop=focalpoint&amp;auto=format%2Ccompress&amp;q=50&amp;fp-x=0.692&amp;fp-y=0.2978&amp;dpr=2 984w, https://imgix.bustle.com/uploads/image/2022/9/19/1e83cea8-1e58-411e-8a7e-83157505102e-shaniatwain_1_header.jpg?w=452&amp;h=452&amp;fit=crop&amp;crop=focalpoint&amp;auto=format%2Ccompress&amp;fp-x=0.692&amp;fp-y=0.2978 452w, https://imgix.bustle.com/uploads/image/2022/9/19/1e83cea8-1e58-411e-8a7e-83157505102e-shaniatwain_1_header.jpg?w=452&amp;h=452&amp;fit=crop&amp;crop=focalpoint&amp;auto=format%2Ccompress&amp;q=50&amp;fp-x=0.692&amp;fp-y=0.2978&amp;dpr=2 904w",
   },
   href: "/entertainment/shania-twain-new-album-tour",
 };
@@ -20,8 +18,10 @@ const contentRightData = [
     title: "Romance Authors Are Mobilizing For Reproductive Rights",
     href: "/rule-breakers/romance-authors-mobilizing-for-reproductive-rights",
     image: {
+      srcCompress: "216",
+      srcFolder: "getty",
       alt: "Romance authors like Brighton Walsh, Nicole French, and Brooke Cumberland raised money for reproduct...",
-      src: "https://imgix.bustle.com/uploads/getty/2022/9/26/98b60fc5-d46f-44db-8d99-00f02265e375-getty-463410750.jpg?w=216&amp;fit=crop&amp;crop=focalpoint&amp;auto=format%2Ccompress&amp;fp-x=0.504&amp;fp-y=0.453",
+      src: "/2022/9/26/98b60fc5-d46f-44db-8d99-00f02265e375-getty-463410750.jpg",
       srcSet:
         "https://imgix.bustle.com/uploads/getty/2022/9/26/98b60fc5-d46f-44db-8d99-00f02265e375-getty-463410750.jpg?w=196&h=136&fit=crop&crop=focalpoint&auto=format%2Ccompress&fp-x=0.504&fp-y=0.453 196w, https://imgix.bustle.com/uploads/getty/2022/9/26/98b60fc5-d46f-44db-8d99-00f02265e375-getty-463410750.jpg?w=196&h=136&fit=crop&crop=focalpoint&auto=format%2Ccompress&q=50&fp-x=0.504&fp-y=0.453&dpr=2 392w, https://imgix.bustle.com/uploads/getty/2022/9/26/98b60fc5-d46f-44db-8d99-00f02265e375-getty-463410750.jpg?w=216&fit=crop&crop=focalpoint&auto=format%2Ccompress&fp-x=0.504&fp-y=0.453 216w, https://imgix.bustle.com/uploads/getty/2022/9/26/98b60fc5-d46f-44db-8d99-00f02265e375-getty-463410750.jpg?w=216&fit=crop&crop=focalpoint&auto=format%2Ccompress&q=50&fp-x=0.504&fp-y=0.453&dpr=2 432w, https://imgix.bustle.com/uploads/getty/2022/9/26/98b60fc5-d46f-44db-8d99-00f02265e375-getty-463410750.jpg?w=206&fit=crop&crop=focalpoint&auto=format%2Ccompress&fp-x=0.504&fp-y=0.453 206w, https://imgix.bustle.com/uploads/getty/2022/9/26/98b60fc5-d46f-44db-8d99-00f02265e375-getty-463410750.jpg?w=206&fit=crop&crop=focalpoint&auto=format%2Ccompress&q=50&fp-x=0.504&fp-y=0.453&dpr=2 412w",
     },
@@ -33,8 +33,10 @@ const contentRightData = [
     title: "Deuxmoi’s Definitive Guide To Celebrity Liquor Brands",
     href: "/rule-breakers/deuxmois-definitive-guide-to-celebrity-liquor-brands",
     image: {
-      src: "https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=216&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress",
-      srcSet: "https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=196&h=196&fit=crop&crop=faces&auto=format%2Ccompress 196w, https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=196&h=196&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 392w, https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=216&fit=crop&crop=faces&auto=format%2Ccompress 216w, https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=216&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 432w, https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=206&fit=crop&crop=faces&auto=format%2Ccompress 206w, https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=206&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 412w"
+      srcCompress: "216b",
+      src: "/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg",
+      srcSet:
+        "https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=196&h=196&fit=crop&crop=faces&auto=format%2Ccompress 196w, https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=196&h=196&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 392w, https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=216&fit=crop&crop=faces&auto=format%2Ccompress 216w, https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=216&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 432w, https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=206&fit=crop&crop=faces&auto=format%2Ccompress 206w, https://imgix.bustle.com/uploads/image/2022/8/3/939379f3-ab56-473a-adb4-052a61277247-deuxmoicelebliquors_teaser.jpg?w=206&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 412w",
     },
     author: ["Natalia Perez-Gonzalez"],
   },
@@ -45,7 +47,8 @@ const contentRightData = [
     subtitle: "It's going to be a good month — just pace yourself.",
     href: "/rule-breakers/deuxmois-definitive-guide-to-celebrity-liquor-brands",
     image: {
-      src: "https://imgix.bustle.com/uploads/image/2022/9/22/b43506d7-bf91-4b69-ba55-bc9fccb89faf-tarotreading_header.jpg?w=216&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress",
+      srcCompress: "216b",
+      src: "/2022/9/22/b43506d7-bf91-4b69-ba55-bc9fccb89faf-tarotreading_header.jpg",
     },
 
     author: ["Jezmina Von Thiele"],
@@ -58,6 +61,7 @@ const contentRightData = [
     subtitle: "Because it just makes sense.",
     href: "/rule-breakers/deuxmois-definitive-guide-to-celebrity-liquor-brands",
     image: {
+      srcCompress: "216c",
       alt: "For National Coffee Day, try these caffeine eye creams, patches, serums, and oils that help lighten ...",
       src: "https://imgix.bustle.com/uploads/image/2022/9/29/1aebe627-acb5-412d-83f9-9a8a9ca6cf35-305006381_1438918989962950_8462920695184690621_n.jpg?w=216&amp;fit=crop&amp;crop=focalpoint&amp;auto=format%2Ccompress&amp;fp-x=0.5747&amp;fp-y=0.6693",
     },
@@ -127,28 +131,10 @@ const contentTwoDataCard = [
       subtitle:
         "The makeup artist and product developer is making the beauty industry more inclusive, one glitter palette at a time.",
       image: {
-        src: "https://imgix.bustle.com/uploads/image/2022/9/23/f3700482-43b4-4bfc-b7e9-e02cc2eb7388-danessa-2001.jpeg?w=540&amp;h=405&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress",
+        src: "/2022/9/23/f3700482-43b4-4bfc-b7e9-e02cc2eb7388-danessa-2001.jpeg",
       },
       author: ["Parizaad Khan Sethi"],
-      links: [
-        {
-          href: "/style/fifteen-percent-pledge-latoya-williams-belfort",
-          title:
-            "15% Pledge Director LaToya Williams-Belfort On The Impact Of Supporting Black Business",
-        },
-        {
-          href: "/style/black-designers-new-york-fashion-week-spring-summer-2023",
-          title: "16 Black Designers To Know From New York Fashion Week",
-        },
-        {
-          href: "/style/15-percent-pledge-black-owned-businesses",
-          title: "How The Shade Room’s Angie Nwandu Is Disrupting Social Media",
-        },
-        {
-          href: "/style/black-owned-beauty-brands",
-          title: "How Angelica Ross Plans To Make Roxie Hart Feel “Universal”",
-        },
-      ],
+      links: ContentTwoData,
     },
   },
   {
@@ -161,7 +147,7 @@ const contentTwoDataCard = [
       subtitle:
         "Including a vitamin C skin booster and a buttery-soft face cream.",
       image: {
-        src: "https://imgix.bustle.com/uploads/image/2022/9/30/11b2fd5d-9522-421f-b833-219bae995d37-productroundup_template-1001.jpeg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress",
+        src: "/2022/9/30/11b2fd5d-9522-421f-b833-219bae995d37-productroundup_template-1001.jpeg",
       },
       author: ["Rachel Lapidos"],
       links: ContentTwoData,
@@ -177,7 +163,7 @@ const contentTwoDataCard = [
       subtitle:
         "The writer and star of Bad Sisters was living a life of perhaps too much leisure.",
       image: {
-        src: "https://imgix.bustle.com/uploads/image/2022/8/24/2c2b456c-e0ac-4f11-9b22-ce2d63081c9e-28-sharonhorgan.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress",
+        src: "/2022/8/24/2c2b456c-e0ac-4f11-9b22-ce2d63081c9e-28-sharonhorgan.jpg",
       },
       author: ["Samantha Rollins"],
       links: ContentTwoData,
@@ -193,7 +179,7 @@ const contentTwoDataCard = [
       subtitle:
         "The soccer player talks about her partnership with Victoria's Secret.",
       image: {
-        src: "https://imgix.bustle.com/uploads/image/2022/9/22/81e6c4e0-7376-49ff-adfc-062b89350099-meganrapinoe_header.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress",
+        src: "/2022/9/22/81e6c4e0-7376-49ff-adfc-062b89350099-meganrapinoe_header.jpg",
       },
       author: ["Carolyn Steber"],
       links: ContentTwoData,

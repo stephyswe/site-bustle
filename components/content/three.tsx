@@ -2,7 +2,7 @@ import { Fragment, useRef } from "react";
 import { urlSite } from "../../constants/data";
 import { Section } from "../section";
 import { TagTwo } from "../typography";
-import { ItemImage } from "./items";
+import { ItemImage, ItemImageOnlyImage } from "./items";
 
 /* eslint-disable @next/next/no-img-element */
 export const ContentThree = ({ data }: any) => {
@@ -52,23 +52,15 @@ export const ContentThree = ({ data }: any) => {
   );
 };
 
-const ContentThreeCard = ({
-  data: {
-    tag,
-    title,
-    image: { src },
-  },
-}: any) => {
+const ContentThreeCard = ({ data: { tag, title, image } }: any) => {
   return (
     <a href="/entertainment/shania-twain-new-album-tour" className="AYM L_P">
       <div className="f_s L9Q">
         <div className="vmZ KlX">
-          <ItemImage
-            src={
-              urlSite +
-              src +
-              "?w=240&fit=crop&crop=faces&auto=format%2Ccompress"
-            }
+          <ItemImageOnlyImage
+            image={image}
+            overwriteCompress="240"
+            sizesNum="195"
           />
         </div>
       </div>
