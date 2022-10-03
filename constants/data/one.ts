@@ -1,4 +1,4 @@
-const ContentLeftData = {
+const dataLeft = {
   title: "Looks Like She Made It",
   subtitle:
     "How Shania Twain found love, her voice, and her rightful place in the pop music pantheon.",
@@ -18,7 +18,7 @@ const ContentLeftData = {
   href: "/entertainment/shania-twain-new-album-tour",
 };
 
-const contentRightData = [
+const dataRight = [
   {
     style: { paddingTop: "69.3878%" },
     tag: "Books",
@@ -104,7 +104,7 @@ const contentRightData = [
   },
 ];
 
-const contentMiddleData = [
+const dataMiddle = [
   {
     time: "Oct. 1, 2022",
     title: "20 Photos Of The 'Hocus Pocus' Cast Then &amp; Now",
@@ -135,7 +135,7 @@ const contentMiddleData = [
 ];
 
 export const dataSectionOne = {
-  left: ContentLeftData,
-  middle: contentMiddleData,
-  right: contentRightData,
+  left: dataLeft,
+  middle: dataMiddle,
+  right: dataRight,
 };

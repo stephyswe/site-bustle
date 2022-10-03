@@ -1,4 +1,4 @@
-const contentFiveCardDataLeft = [
+const dataLeft = [
   {
     href: "/entertainment/hocus-pocus-broadway-musical-in-the-works",
     style: { paddingTop: "65.3061%" },
@@ -31,7 +31,7 @@ const contentFiveCardDataLeft = [
   },
 ];
 
-const contentFiveDataRight = [
+const dataRight = [
   {
     time: "Sep. 30, 2022",
     href: "/entertainment/nick-cannon-dating-girlfriends-relationships-kids",
@@ -62,7 +62,7 @@ const contentFiveDataRight = [
   },
 ];
 
-const contentMiddleData = {
+const dataMiddle = {
   style: { paddingTop: "100%" },
   href: "/entertainment/paul-mescal-aftersun-gods-creatures-the-internet-his-relationship",
   title: "Paul Mescal, Man Of Mystery",
@@ -75,7 +75,7 @@ const contentMiddleData = {
 };
 
 export const dataSectionFive = {
-  middle: contentMiddleData,
-  right: contentFiveDataRight,
-  left: contentFiveCardDataLeft,
+  middle: dataMiddle,
+  right: dataRight,
+  left: dataLeft,
 };

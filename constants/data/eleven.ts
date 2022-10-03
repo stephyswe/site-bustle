@@ -74,7 +74,7 @@ const dataMiddle = {
   author: ["Samantha Leach", "Heather Hazzan"],
 };
 
-export const dataSectionSeven = {
+export const dataSectionEleven = {
   middle: dataMiddle,
   right: dataRight,
   left: dataLeft,

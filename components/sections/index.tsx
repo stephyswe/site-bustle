@@ -1,5 +1,3 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
-/* eslint-disable @next/next/no-img-element */
 import { useRef, useState } from "react";
 import cx from "classnames";
 import {
@@ -8,14 +6,13 @@ import {
   CardTime,
   SectionTwoContent,
   CardPoster,
-  CardSectionFiveMiddle,
-  CardSectionFiveLeft,
-  CardSectionSixHeading,
+  CardSectionSixHeading as CardSectionSixHeading,
   CardSectionSixPicture,
   CardSectionEight,
   CardSectionEightPicture,
 } from "../card";
 import {
+  Author,
   ButtonSubmit,
   FormGet,
   InputEmail,
@@ -25,14 +22,19 @@ import {
 } from "../items";
 import { Section } from "../section";
 import { sideScroll } from "../../utils/scroll";
-
 import {
   SectionPosterWrapper,
-  SectionFiveHeading,
-  ContentFiveMiddle,
-  SectionFiveWrapper,
+  SectionMagazineHeading as CardSectionMagazineHeading,
+  ContentFiveMiddle as CardSectionMagazineContent,
+  SectionFiveWrapper as SectionMagazineContainer,
 } from "./partials";
-import { SubtitleNewsLetter, TitleNewsLetter } from "../typography";
+import {
+  SubtitleArticle,
+  SubtitleNewsLetter,
+  TagArticle,
+  TitleArticle,
+  TitleNewsLetter,
+} from "../typography";
 
 export const SectionSpread = ({
   cardNum,
@@ -156,18 +158,38 @@ export const SectionFour = ({ data: { title, image } }: any) => (
   </Section>
 );
 
-export const SectionFive = ({ data }: any) => (
-  <Section cardNum={161523772}>
-    <SectionFiveWrapper>
-      <SectionFiveHeading className="Egy" title="Entertainment" />
-      <ContentFiveMiddle
-        title="Celebrity News"
+export const SectionMagazine = ({ title, subtitle, cardNum, data }: any) => (
+  <Section cardNum={cardNum}>
+    <SectionMagazineContainer>
+      <CardSectionMagazineHeading title={title} />
+      <CardSectionMagazineContent
+        title={subtitle}
+        data={data}
+        orderTime="yHP"
+        orderArticles="Kf6"
+        orderHeading="FpW"
+      />
+    </SectionMagazineContainer>
+  </Section>
+);
+
+export const SectionMagazineInverted = ({
+  title,
+  subtitle,
+  cardNum,
+  data,
+}: any) => (
+  <Section cardNum={cardNum}>
+    <SectionMagazineContainer>
+      <CardSectionMagazineHeading className="Egy" title={title} />
+      <CardSectionMagazineContent
+        title={subtitle}
         data={data}
         orderTime="QXt"
         orderArticles="GY8"
         orderHeading="uji"
       />
-    </SectionFiveWrapper>
+    </SectionMagazineContainer>
   </Section>
 );
 
@@ -194,21 +216,6 @@ export const SectionSix = ({ data: { content, picture } }: any) => (
   </Section>
 );
 
-export const SectionSeven = ({ data }: any) => (
-  <Section cardNum={161523773}>
-    <SectionFiveWrapper>
-      <SectionFiveHeading title="Style" />
-      <ContentFiveMiddle
-        title="Beauty News"
-        data={data}
-        orderTime="yHP"
-        orderArticles="Kf6"
-        orderHeading="FpW"
-      />
-    </SectionFiveWrapper>
-  </Section>
-);
-
 export const SectionEight = ({ data: { content, picture } }: any) => (
   <Section cardNum={161523774}>
     <div className="w9K Mnx">
@@ -232,34 +239,16 @@ export const SectionEight = ({ data: { content, picture } }: any) => (
   </Section>
 );
 
-export const SectionNine = ({ data }: any) => (
-  <Section cardNum={161523775}>
-    <SectionFiveWrapper>
-      <SectionFiveHeading className="Egy" title="Wellness" />
-      <ContentFiveMiddle
-        title="Mental Health"
-        data={data}
-        orderTime="QXt"
-        orderArticles="GY8"
-        orderHeading="uji"
-      />
-    </SectionFiveWrapper>
-  </Section>
-);
-
-export const SectionNewsLetter = ({ data }: any) => (
+export const SectionNewsLetter = ({
+  data: { title, subtitle, submit },
+}: any) => (
   <Section cardNum={161523761}>
     <div className="j1J sK1">
       <div className="lV1">
         <div className="yLP">
           <div className="bHV">
-            <TitleNewsLetter>Get The Bustle Daily Newsletter</TitleNewsLetter>
-            <SubtitleNewsLetter>
-              With exclusive celebrity interviews, the best new beauty trends,
-              and earth shattering relationship advice, our award-winning daily
-              newsletter has everything you need to sound like a person who’s on
-              TikTok, even if you aren’t.
-            </SubtitleNewsLetter>
+            <TitleNewsLetter>{title}</TitleNewsLetter>
+            <SubtitleNewsLetter>{subtitle}</SubtitleNewsLetter>
             <FormGet action="https://newsletter.bustle.com/signup">
               <input name="site" type="hidden" value="BUSTLE" />
               <input name="source" type="hidden" value="NewsletterCard" />
@@ -268,7 +257,7 @@ export const SectionNewsLetter = ({ data }: any) => (
                 <div className="mI6">
                   <InputEmail />
                 </div>
-                <ButtonSubmit>Subscribe</ButtonSubmit>
+                <ButtonSubmit>{submit}</ButtonSubmit>
               </div>
             </FormGet>
           </div>
@@ -276,4 +265,41 @@ export const SectionNewsLetter = ({ data }: any) => (
       </div>
     </div>
   </Section>
+);
+
+export const SectionAllArticles = ({ data }: any) => (
+  <Section cardNum={161523781}>
+    <div className="bw8 tTD">
+      <div className="fjo">
+        <div className="Ouv">
+          {data.map((item: any) => (
+            <CardArticle key={item.title} data={item} />
+          ))}
+        </div>
+      </div>
+    </div>
+  </Section>
+);
+
+export const CardArticle = ({
+  data: { href, title, subtitle, tag, author, image },
+}: any) => (
+  <a href={href} className="AYM iH0">
+    <div className="f_s gGe">
+      <div style={{ paddingTop: "100%" }} className="vmZ KlX oIZ ap2">
+        <ItemImage image={image} className="Toq" sizesNum="123" />
+      </div>
+    </div>
+    <div className="J1w">
+      <div className="nRE">
+        <TagArticle className="wPh">{tag}</TagArticle>
+      </div>
+
+      <TitleArticle>{title}</TitleArticle>
+    </div>
+    <div className="hiy">
+      <SubtitleArticle>{subtitle}</SubtitleArticle>
+      <Author className="atc" data={author}></Author>
+    </div>
+  </a>
 );

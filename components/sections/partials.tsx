@@ -20,7 +20,7 @@ export const SectionPosterWrapper = ({ title, children }: any) => (
   </Section>
 );
 
-export const SectionFiveHeading = ({ className, title }: any) => (
+export const SectionMagazineHeading = ({ className, title }: any) => (
   <div className={cx(`ops ${className}`)}>
     <a href="/entertainment">
       <div className="CJo">

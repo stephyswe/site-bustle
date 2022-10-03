@@ -36,20 +36,19 @@ export function handleSrc(src: string, srcFolder: any, srcCompress: any) {
 
 export function caseSizes(sizesNum: any) {
   switch (sizesNum) {
+    case "123":
+      return "(min-width:1025px) 215px, (min-width:768px) 215px, 123px";
+    case "195":
+      return "(min-width:1025px) 240px, (min-width:768px) 260px, 195px";
+    case "196":
+      return "(min-width:1025px) 216px, (min-width:768px) 206px, 196px";
+    case "197":
+      return "(min-width:1025px) 540px, (min-width:768px) 342px, 197px";
+    case "248":
+      return "(min-width:1025px) 800px, (min-width:768px) 614px, 248px";
     case "374":
       return "(min-width:1025px) 492px, (min-width:768px) 452px, 374px";
 
-    case "248":
-      return "(min-width:1025px) 800px, (min-width:768px) 614px, 248px";
-
-    case "196":
-      return "(min-width:1025px) 216px, (min-width:768px) 206px, 196px";
-
-    case "540":
-      return "(min-width:1025px) 540px, (min-width:768px) 342px, 197px";
-
-    case "195":
-      return "(min-width:1025px) 240px, (min-width:768px) 260px, 195px";
     default:
       return sizesNum;
   }
@@ -57,6 +56,8 @@ export function caseSizes(sizesNum: any) {
 
 export function caseCompress(orgSrc: any, srcCompress: any) {
   switch (srcCompress) {
+    case "215":
+      return "?w=215&amp;h=215&amp;fit=crop&amp;crop=faces&amp;auto=format%2Ccompress";
     case "216":
       return "?w=216&fit=crop&crop=focalpoint&auto=format%2Ccompress&fp-x=0.504&fp-y=0.453";
 

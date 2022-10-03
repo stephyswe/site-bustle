@@ -133,37 +133,57 @@ a {
   }
 }
 
-/* under top */
+/* Top (1) */
 .card-161523783 {
   --slot3: #411112;
   --slot4: #596e61;
   --slot7: #411112
 }
 
-/* bustle originals (3) */
+/* Slideshow (2) */
+
+/* Bustle originals (3) */
 .card-161523782 {
   --slot3: #1a1a1a;
   --slot4: #ababab;
   --slot7: #1a1a1a
 }
 
+/* The Health & Wellness Issue (4) */
 .card-161523785 {
   --metaColor: #ffffff;
   --navColor: #ffffff
 }
 
+/* Entertainment (5) */
 .card-161523772 {
   --slot3: #ea482c;
   --slot4: #aaadc3;
   --slot7: #ea482c
 }
 
+/* News (5) */
+
+/* Style (6) */
+.card-161523773 {
+  --slot3: #ea482c;
+  --slot4: #aaadc3;
+  --slot7: #ea482c;
+}
+
+/* Keke's World (7) */
+.card-161523774 {
+  --metaColor: #ffffff;
+}
+
+/* Wellness (8) */
 .card-161523775 {
   --slot3: #67b7c2;
   --slot4: #a18481;
   --slot7: #67b7c2
 }
 
+/* Newsletter (9) */
 .card-161523761 {
   --slot2: #f0e0e0;
   --slot3: #fc5356;
@@ -173,6 +193,25 @@ a {
   --slot9: #f0e0e0;
   --metaColor: #fc5356;
   --navColor: #fc5356
+}
+
+/* Life (10) */
+.card-161523776 {
+  --slot3: #869756;
+  --slot4: #8e9a88;
+  --slot7: #869756;
+}
+
+/* Jennifer Coolidge (11) */
+.card-161523777 {
+  --metaColor: #ffffff;
+}
+
+/* Rule Breakers (12) */
+.card-161523778 {
+  --slot3: #2b3157;
+  --slot4: #797b84;
+  --slot7: #2b3157;
 }
 
 @media (min-width: 768px) {

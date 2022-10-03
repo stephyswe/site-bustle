@@ -1,5 +1,6 @@
 import {
   dataSectionEight,
+  dataSectionEleven,
   dataSectionFive,
   dataSectionFour,
   dataSectionNine,
@@ -7,8 +8,11 @@ import {
   dataSectionSeven,
   dataSectionSix,
   dataSectionTen,
+  dataSectionThirteen,
   dataSectionThree,
+  dataSectionTwelve,
   dataSectionTwo,
+  dataSectionFourteen,
 } from "./data";
 
 export const urlSite = "https://imgix.bustle.com/uploads/image";
@@ -24,4 +28,8 @@ export const allData = {
   eight: dataSectionEight,
   nine: dataSectionNine,
   ten: dataSectionTen,
+  eleven: dataSectionEleven,
+  twelve: dataSectionTwelve,
+  thirteen: dataSectionThirteen,
+  fourteen: dataSectionFourteen,
 };

@@ -5,11 +5,10 @@ import {
   Tag,
   Title,
   Subtitle,
-  Typography,
-  SubtitleTwo,
-  Title2ContentTwo,
-  TitleContentTwo,
-  TagTwo,
+  CardSectionTwoSubtitle,
+  CardSectionTwoTitle,
+  SectionTwoContentTitle,
+  TagArticle,
 } from "./typography";
 import cx from "classnames";
 
@@ -52,7 +51,7 @@ export const CardHeadline = ({
       </div>
     </div>
     <div className="Trd"></div>
-    <Typography>{title}</Typography>
+    <Title>{title}</Title>
     <div className="Q9i mp_">
       <Subtitle>{subtitle}</Subtitle>
       <Author data={author} />
@@ -81,7 +80,10 @@ export const SectionTwoContent = ({
         <div className="IA_">
           <div className="wZQ">
             {links.map(({ title, href }: any) => (
-              <CardTitle key={title} data={{ title, href }} />
+              <a key={title} href={href} className="wLh">
+                <SectionTwoContentTitle>{title}</SectionTwoContentTitle>
+                <div className="_yv"></div>
+              </a>
             ))}
           </div>
         </div>
@@ -96,14 +98,14 @@ const CardSectionTwo = ({
 }: any) => (
   <a href={href} className="fz0">
     <div className="_yv"></div>
-    <Title2ContentTwo>{title}</Title2ContentTwo>
+    <CardSectionTwoTitle>{title}</CardSectionTwoTitle>
     <div className="wd0">
-      <SubtitleTwo>{subtitle}</SubtitleTwo>
+      <CardSectionTwoSubtitle>{subtitle}</CardSectionTwoSubtitle>
       <Author data={author} />
     </div>
     <div className="yMG">
       <div className="vmZ Dsq">
-        <ItemImage image={image} sizesNum="540" overwriteCompress="540b" />
+        <ItemImage image={image} sizesNum="197" overwriteCompress="540b" />
       </div>
     </div>
   </a>
@@ -111,7 +113,7 @@ const CardSectionTwo = ({
 
 const CardTitle = ({ data: { title, href } }: any) => (
   <a href={href} className="wLh">
-    <TitleContentTwo>{title}</TitleContentTwo>
+    <SectionTwoContentTitle>{title}</SectionTwoContentTitle>
     <div className="_yv"></div>
   </a>
 );
@@ -124,7 +126,9 @@ export const CardPoster = ({ data: { tag, title, image } }: any) => (
       </div>
     </div>
     <div className="Epy">
-      <div className="nRE">{tag ? <TagTwo>{tag}</TagTwo> : null}</div>
+      <div className="nRE">
+        {tag ? <TagArticle className="b8r">{tag}</TagArticle> : null}
+      </div>
       <p className="r0U G97">{title}</p>
     </div>
   </a>

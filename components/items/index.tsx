@@ -46,6 +46,7 @@ export const ItemImage = ({
 
 export const InputEmail = ({ className, placeholder }: any) => (
   <input
+    onChange={() => {}}
     autoComplete="email"
     id="email-signup"
     name="email"
@@ -86,7 +87,7 @@ export const ButtonSubmit = ({ children, className, title }: any) => (
 );
 
 export const FormGet = ({ children, className, title, ...rest }: any) => (
-  <form method="get" className="" {...rest}>
+  <form onChange={() => {}} method="get" className="" {...rest}>
     {children}
   </form>
 );
