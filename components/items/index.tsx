@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import cx from "classnames";
-import { handleSizes, handleSrc, handleSrcSet } from "./utils";
+import { caseSizes, handleSrc, handleSrcSet } from "./utils";
 
 export const Video = ({ videoSrc }: any) => (
   <div className="Rfb tW7">
@@ -32,20 +32,28 @@ export const ItemImage = ({
   className,
   overwriteCompress,
   sizesNum,
-  image: { alt = " ", src, srcNum, srcFolder, srcCompress, sets },
+  image: { alt = " ", src, srcFolder, srcCompress, sets },
 }: any) => (
   <img
-    src={handleSrc(
-      src,
-      srcNum,
-      srcFolder,
-      overwriteCompress ? overwriteCompress : srcCompress
-    )}
+    src={handleSrc(src, srcFolder, overwriteCompress ?? srcCompress)}
     srcSet={sets ? handleSrcSet(sets, srcFolder, src) : ""}
-    sizes={handleSizes(sizesNum)}
+    sizes={caseSizes(sizesNum)}
     alt={alt}
     className={cx(`${className} EdX`)}
     decoding="async"
+  />
+);
+
+export const InputEmail = ({ className, placeholder }: any) => (
+  <input
+    autoComplete="email"
+    id="email-signup"
+    name="email"
+    placeholder="email@email.com"
+    required={true}
+    type="email"
+    value=""
+    className="oAn"
   />
 );
 
@@ -69,6 +77,18 @@ export const Label = ({ onClick, className, num, title, numIndex }: any) => (
     <div className="Xaa">{num}</div>
     <div className="Dlm">{title}</div>
   </label>
+);
+
+export const ButtonSubmit = ({ children, className, title }: any) => (
+  <button type="submit" className="KyL">
+    {children}
+  </button>
+);
+
+export const FormGet = ({ children, className, title, ...rest }: any) => (
+  <form method="get" className="" {...rest}>
+    {children}
+  </form>
 );
 
 /*

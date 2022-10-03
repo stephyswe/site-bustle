@@ -1,9 +1,12 @@
 import type { NextPage } from "next";
 import { Header } from "../components/layout/header";
-import { allData } from "../constants/data";
+import { allData } from "../constants/api";
 import {
+  SectionEight,
   SectionFive,
   SectionFour,
+  SectionNewsLetter,
+  SectionNine,
   SectionPosters,
   SectionSeven,
   SectionSix,
@@ -13,7 +16,8 @@ import {
 import { Logo } from "../components/logo";
 
 const Home: NextPage = () => {
-  const { first, second, third, four, five, six, seven } = allData;
+  const { first, second, third, four, five, six, seven, eight, ten, nine } =
+    allData;
   return (
     <div>
       <Header />
@@ -26,6 +30,9 @@ const Home: NextPage = () => {
         <SectionFive data={five} />
         <SectionSix data={six} />
         <SectionSeven data={five} />
+        <SectionEight data={eight} />
+        <SectionNine data={five} />
+        <SectionNewsLetter data={ten} />
       </div>
     </div>
   );

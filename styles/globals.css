@@ -158,7 +158,25 @@ a {
   --slot7: #ea482c
 }
 
+.card-161523775 {
+  --slot3: #67b7c2;
+  --slot4: #a18481;
+  --slot7: #67b7c2
+}
+
+.card-161523761 {
+  --slot2: #f0e0e0;
+  --slot3: #fc5356;
+  --slot4: #a39b9b;
+  --slot6: #f0e0e0;
+  --slot7: #fc5356;
+  --slot9: #f0e0e0;
+  --metaColor: #fc5356;
+  --navColor: #fc5356
+}
+
 @media (min-width: 768px) {
+
   .Iv6:checked~.brJ .Ont .iRG,
   .c3V:checked~.brJ .fCW .iRG,
   .m_5:checked~.brJ .ukR .iRG,

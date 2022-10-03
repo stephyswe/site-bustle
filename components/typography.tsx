@@ -22,6 +22,16 @@ export const TitleTime = ({ title }: any) => (
   </div>
 );
 
+export const TitleNewsLetter = ({ children }: any) => (
+  <h1 className="wqK">{children}</h1>
+);
+
+export const SubtitleNewsLetter = ({ children }: any) => (
+  <div className="EFv">
+    <p>{children}</p>
+  </div>
+);
+
 export const TitleContentTwo = ({ children }: any) => (
   <p className="Eby">{children}</p>
 );

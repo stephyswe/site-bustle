@@ -12,18 +12,27 @@ import {
   CardSectionFiveLeft,
   CardSectionSixHeading,
   CardSectionSixPicture,
+  CardSectionEight,
+  CardSectionEightPicture,
 } from "../card";
-import { InputRadio, ItemImage, Label } from "../items";
+import {
+  ButtonSubmit,
+  FormGet,
+  InputEmail,
+  InputRadio,
+  ItemImage,
+  Label,
+} from "../items";
 import { Section } from "../section";
 import { sideScroll } from "../../utils/scroll";
-import { TitleTime } from "../typography";
+
 import {
   SectionPosterWrapper,
   SectionFiveHeading,
   ContentFiveMiddle,
-  ContentSevenMiddle,
   SectionFiveWrapper,
 } from "./partials";
+import { SubtitleNewsLetter, TitleNewsLetter } from "../typography";
 
 export const SectionSpread = ({
   cardNum,
@@ -185,8 +194,6 @@ export const SectionSix = ({ data: { content, picture } }: any) => (
   </Section>
 );
 
-
-
 export const SectionSeven = ({ data }: any) => (
   <Section cardNum={161523773}>
     <SectionFiveWrapper>
@@ -199,5 +206,74 @@ export const SectionSeven = ({ data }: any) => (
         orderHeading="FpW"
       />
     </SectionFiveWrapper>
+  </Section>
+);
+
+export const SectionEight = ({ data: { content, picture } }: any) => (
+  <Section cardNum={161523774}>
+    <div className="w9K Mnx">
+      <div className="mRp y-m">
+        <a
+          href="/style/how-the-all-new-genesis-g90-takes-korean-design-to-an-audacious-new-level"
+          className="Hof"
+        ></a>
+        <div className="rHN cCV">
+          <div className="sWr">
+            <div className="T8A">
+              <div className="gsz G2w I0j">
+                <CardSectionEight data={content} />
+                <CardSectionEightPicture data={picture} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Section>
+);
+
+export const SectionNine = ({ data }: any) => (
+  <Section cardNum={161523775}>
+    <SectionFiveWrapper>
+      <SectionFiveHeading className="Egy" title="Wellness" />
+      <ContentFiveMiddle
+        title="Mental Health"
+        data={data}
+        orderTime="QXt"
+        orderArticles="GY8"
+        orderHeading="uji"
+      />
+    </SectionFiveWrapper>
+  </Section>
+);
+
+export const SectionNewsLetter = ({ data }: any) => (
+  <Section cardNum={161523761}>
+    <div className="j1J sK1">
+      <div className="lV1">
+        <div className="yLP">
+          <div className="bHV">
+            <TitleNewsLetter>Get The Bustle Daily Newsletter</TitleNewsLetter>
+            <SubtitleNewsLetter>
+              With exclusive celebrity interviews, the best new beauty trends,
+              and earth shattering relationship advice, our award-winning daily
+              newsletter has everything you need to sound like a person who’s on
+              TikTok, even if you aren’t.
+            </SubtitleNewsLetter>
+            <FormGet action="https://newsletter.bustle.com/signup">
+              <input name="site" type="hidden" value="BUSTLE" />
+              <input name="source" type="hidden" value="NewsletterCard" />
+              <input name="primaryNewsletter" type="hidden" value="bustle" />
+              <div className="r-Z">
+                <div className="mI6">
+                  <InputEmail />
+                </div>
+                <ButtonSubmit>Subscribe</ButtonSubmit>
+              </div>
+            </FormGet>
+          </div>
+        </div>
+      </div>
+    </div>
   </Section>
 );

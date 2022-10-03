@@ -1,31 +1,9 @@
-import { urlSite } from "../../constants/data";
-
-export function handleSizes(sizes: any) {
-  switch (sizes) {
-    case "374":
-      return "(min-width:1025px) 492px, (min-width:768px) 452px, 374px";
-
-    case "248":
-      return "(min-width:1025px) 800px, (min-width:768px) 614px, 248px";
-
-    case "196":
-      return "(min-width:1025px) 216px, (min-width:768px) 206px, 196px";
-
-    case "540":
-      return "(min-width:1025px) 540px, (min-width:768px) 342px, 197px";
-
-    case "195":
-      return "(min-width:1025px) 240px, (min-width:768px) 260px, 195px";
-    default:
-      return "";
-  }
-}
+import { urlSite } from "../../constants/api";
 
 export function handleUrlSite(urlSite: any, srcFolder: any) {
   let orgUrlSite = urlSite;
-  if (srcFolder) {
+  if (srcFolder)
     orgUrlSite = `${orgUrlSite.replace("/image", "")}/${srcFolder}`;
-  }
   return orgUrlSite;
 }
 
@@ -41,12 +19,7 @@ export function handleSrcSet(srcSets: any, srcFolder: any, src: any) {
   return emptySrcSet.join("");
 }
 
-export function handleSrc(
-  src: string,
-  srcNum: any,
-  srcFolder: any,
-  srcCompress: any
-) {
+export function handleSrc(src: string, srcFolder: any, srcCompress: any) {
   let orgSrc = src;
   if (!src.includes("https://")) {
     orgSrc = handleUrlSite(urlSite, srcFolder) + src;
@@ -55,14 +28,35 @@ export function handleSrc(
   }
 
   if (srcCompress && !src.includes("(min-width")) {
-    orgSrc = orgSrc + handleCompress(orgSrc, srcCompress);
+    orgSrc = orgSrc + caseCompress(orgSrc, srcCompress);
   }
 
   return orgSrc;
 }
 
-export function handleCompress(sizes: any, number: any) {
-  switch (number) {
+export function caseSizes(sizesNum: any) {
+  switch (sizesNum) {
+    case "374":
+      return "(min-width:1025px) 492px, (min-width:768px) 452px, 374px";
+
+    case "248":
+      return "(min-width:1025px) 800px, (min-width:768px) 614px, 248px";
+
+    case "196":
+      return "(min-width:1025px) 216px, (min-width:768px) 206px, 196px";
+
+    case "540":
+      return "(min-width:1025px) 540px, (min-width:768px) 342px, 197px";
+
+    case "195":
+      return "(min-width:1025px) 240px, (min-width:768px) 260px, 195px";
+    default:
+      return sizesNum;
+  }
+}
+
+export function caseCompress(orgSrc: any, srcCompress: any) {
+  switch (srcCompress) {
     case "216":
       return "?w=216&fit=crop&crop=focalpoint&auto=format%2Ccompress&fp-x=0.504&fp-y=0.453";
 
@@ -93,6 +87,6 @@ export function handleCompress(sizes: any, number: any) {
     case "2000":
       return "?w=2000&amp;h=640&amp;fit=crop&amp;crop=focalpoint&amp;auto=format%2Ccompress&amp;fp-x=0.592&amp;fp-y=0.2623";
     default:
-      return sizes;
+      return orgSrc;
   }
 }
