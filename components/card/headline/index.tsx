@@ -1,6 +1,6 @@
 import { ItemImage } from "@/components/items";
 import { Author } from "@/components/items/author";
-import { Subtitle, Title } from "@/components/typography";
+import Typography from "@/components/items/typography";
 
 const CardHeadline = ({
   data: { image, title, subtitle, author, href },
@@ -12,9 +12,13 @@ const CardHeadline = ({
       </div>
     </div>
     <div className="Trd"></div>
-    <Title>{title}</Title>
+    <Typography type="title" variant="default">
+      {title}
+    </Typography>
     <div className="Q9i mp_">
-      <Subtitle>{subtitle}</Subtitle>
+      <Typography type="subtitle" variant="default">
+        {subtitle}
+      </Typography>
       <Author data={author} />
     </div>
   </a>

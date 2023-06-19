@@ -2,7 +2,7 @@ import cn from "classnames";
 
 import { ItemImage } from "@/components/items";
 import { Author } from "@/components/items/author";
-import { Subtitle, Title } from "@/components/typography";
+import Typography from "@/components/items/typography";
 
 const CardSectionFiveMiddle = ({
   orderHeading,
@@ -15,9 +15,13 @@ const CardSectionFiveMiddle = ({
       </div>
     </div>
     <div className="Trd"></div>
-    <Title className="k84">{title}</Title>
+    <Typography type="title" variant="default" className="k84">
+      {title}
+    </Typography>
     <div className="Q9i PN2">
-      <Subtitle className="Qeh">{subtitle}</Subtitle>
+      <Typography type="subtitle" variant="default" className="Qeh">
+        {subtitle}
+      </Typography>
       <Author className="xaa" data={author} />
     </div>
   </a>

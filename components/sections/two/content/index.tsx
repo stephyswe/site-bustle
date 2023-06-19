@@ -1,9 +1,6 @@
 import { ItemImage } from "@/components/items";
 import { Author } from "@/components/items/author";
-import {
-  CardSectionTwoSubtitle,
-  CardSectionTwoTitle,
-} from "@/components/typography";
+import Typography from "@/components/items/typography";
 
 const SectionTwoContent = ({
   onClick,
@@ -44,9 +41,13 @@ const CardSectionTwo = ({
 }: any) => (
   <a href={href} className="fz0">
     <div className="_yv"></div>
-    <CardSectionTwoTitle>{title}</CardSectionTwoTitle>
+    <Typography type="title" variant="cardSectionTwo">
+      {title}
+    </Typography>
     <div className="wd0">
-      <CardSectionTwoSubtitle>{subtitle}</CardSectionTwoSubtitle>
+      <Typography type="subtitle" variant="cardSectionTwo">
+        {subtitle}
+      </Typography>
       <Author data={author} />
     </div>
     <div className="yMG">

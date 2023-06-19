@@ -1,9 +1,9 @@
 import cn from "classnames";
 
 import CardTime from "@/components/card/time";
+import Typography from "@/components/items/typography";
 import CardSectionFiveLeft from "@/components/sections/magazine/card";
 import CardSectionFiveMiddle from "@/components/sections/magazine/middle";
-import { TitleTime } from "@/components/typography";
 
 const MagazineContent = ({
   title,
@@ -20,7 +20,9 @@ const MagazineContent = ({
       ))}
     </div>
     <div className={cn(`og9 ${orderTime}`)}>
-      <TitleTime title={title} />
+      <Typography type="title" variant="time">
+        {title}
+      </Typography>
       <div className="uOw">
         {right.map((item: any) => (
           <CardTime key={item.title} data={item} />

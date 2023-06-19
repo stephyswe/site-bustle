@@ -1,5 +1,5 @@
 import { ItemImage } from "@/components/items";
-import { TagArticle } from "@/components/typography";
+import Typography from "@/components/items/typography";
 
 const CardPoster = ({ data: { tag, title, image } }: any) => (
   <a href="/entertainment/shania-twain-new-album-tour" className="AYM L_P">
@@ -10,7 +10,11 @@ const CardPoster = ({ data: { tag, title, image } }: any) => (
     </div>
     <div className="Epy">
       <div className="nRE">
-        {tag ? <TagArticle className="b8r">{tag}</TagArticle> : null}
+        {tag ? (
+          <Typography type="tag" variant="article" className="b8r">
+            {tag}
+          </Typography>
+        ) : null}
       </div>
       <p className="r0U G97">{title}</p>
     </div>

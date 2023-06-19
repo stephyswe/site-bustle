@@ -1,10 +1,6 @@
 import { ItemImage } from "@/components/items";
 import { Author } from "@/components/items/author";
-import {
-  SubtitleArticle,
-  TagArticle,
-  TitleArticle,
-} from "@/components/typography";
+import Typography from "@/components/items/typography";
 
 const CardArticle = ({
   data: { href, title, subtitle, tag, author, image },
@@ -17,13 +13,19 @@ const CardArticle = ({
     </div>
     <div className="J1w">
       <div className="nRE">
-        <TagArticle className="wPh">{tag}</TagArticle>
+        <Typography type="tag" variant="article" className="wPh">
+          {tag}
+        </Typography>
       </div>
 
-      <TitleArticle>{title}</TitleArticle>
+      <Typography type="title" variant="article">
+        {title}
+      </Typography>
     </div>
     <div className="hiy">
-      <SubtitleArticle>{subtitle}</SubtitleArticle>
+      <Typography type="subtitle" variant="article">
+        {subtitle}
+      </Typography>
       <Author className="atc" data={author}></Author>
     </div>
   </a>
