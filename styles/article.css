@@ -1,0 +1,100 @@
+.HLd {
+    position: relative;
+    overflow: hidden
+}
+
+.KTZ {
+    background: var(--slot2);
+    color: var(--slot1);
+    overflow-x: hidden;
+    position: relative
+}
+
+.t9u {
+    margin-top: 1.75rem
+}
+
+.NpE {
+    display: grid;
+    grid-template-columns: [full-start] minmax(var(--pageGutter), 1fr) [main-start] minmax(65%, var(--maxBodyWidth)) [main-end] var(--pageGutter) [full-end];
+    color: var(--slot1);
+    font-size: 1.1rem;
+    line-height: 1.75;
+    margin: -1px auto 0;
+    position: relative;
+    word-break: break-word
+}
+
+.NpE>* {
+    grid-column: main
+}
+
+.W0r {
+    margin: 2rem 0 0
+}
+
+.N0T {
+    width: 1px;
+    height: 1px
+}
+
+.BW4 {
+    grid-column: full;
+    width: 100vw;
+    margin-bottom: var(--minAdSpacing)
+}
+
+.tJU {
+    grid-column: full;
+    overflow: visible
+}
+
+.tJU>div {
+    max-width: 300px;
+    overflow-x: hidden
+}
+
+@media (min-width: 768px) {
+    .t9u {
+        padding: 0
+    }
+
+    .NpE {
+        font-size: 1.15rem;
+        margin: 0
+    }
+}
+
+@media (min-width: 1025px) {
+    .w4G {
+        margin: 2rem 0 0
+    }
+
+    .t9u {
+        margin-top: 2rem
+    }
+
+    .NpE {
+        grid-template-columns: [full-start] 37% [main-start] minmax(calc(63% - 3.75rem), var(--maxBodyWidth)) [main-end] 3.75rem [full-end]
+    }
+
+    .MyP {
+        margin: auto;
+        max-width: var(--maxContainerWidth);
+        position: relative
+    }
+
+    .BW4 {
+        margin-left: calc((100vw - 100%)/2*-1)
+    }
+
+    .tJU {
+        grid-column: 1
+    }
+
+    .tJU>* {
+        left: 0;
+        position: absolute;
+        right: 0
+    }
+}

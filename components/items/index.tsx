@@ -2,8 +2,8 @@ import { Fragment } from "react";
 import cx from "classnames";
 import { caseSizes, handleSrc, handleSrcSet } from "./utils";
 
-export const Video = ({ videoSrc }: any) => (
-  <div className="Rfb tW7">
+export const Video = ({ className, videoSrc }: any) => (
+  <div className={cx(`Rfb ${className}`)}>
     <video autoPlay={true} className="kOK" loop={true} playsInline={false}>
       <source src={videoSrc} />
     </video>

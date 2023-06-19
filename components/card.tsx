@@ -144,7 +144,7 @@ export const CardSectionFiveLeft = ({
           <ItemImage overwriteCompress="216b" image={image} />
         </div>
       ) : null}
-      {videoSrc ? <Video videoSrc={videoSrc} /> : null}
+      {videoSrc ? <Video className="tW7" videoSrc={videoSrc} /> : null}
     </div>
     <Tag className="R-A">{tag}</Tag>
     <Title className="k84">{title}</Title>
