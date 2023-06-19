@@ -1792,6 +1792,7 @@ iframe {
   :root {
     --minAdSpacing: 3rem;
     --pageGutter: 2.5rem;
+    --cardMinHeight: 520px
   }
 }
 
@@ -4534,9 +4535,7 @@ aside.rhF {
   margin: auto;
 }
 
-:root {
-  --panDuration: 1s;
-}
+
 
 .HP0 {
   position: relative;
@@ -5987,15 +5986,6 @@ a.NUu {
   margin-left: 0.1rem;
   transition: background var(--transitionHover);
   color: inherit;
-}
-
-:root {
-  --color0: #2b3157;
-  --color1: #d8aaa0;
-  --color2: #67b7c2;
-  --color3: #9fac20;
-  --tabWidth: 75px;
-  --transitionTime: 0.4s;
 }
 
 .A_V {
@@ -16233,6 +16223,19 @@ aside.fX2 {
 :root {
   --indent: 2rem;
   --indentTabletUp: 5.5rem;
+}
+
+:root {
+  --panDuration: 1s;
+}
+
+:root {
+  --color0: #2b3157;
+  --color1: #d8aaa0;
+  --color2: #67b7c2;
+  --color3: #9fac20;
+  --tabWidth: 75px;
+  --transitionTime: 0.4s;
 }
 
 .Afg > h2 a,
