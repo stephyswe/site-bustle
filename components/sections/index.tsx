@@ -1,305 +1,76 @@
-import { useRef, useState } from "react";
-import cx from "classnames";
-import {
-  CardHeadline,
-  CardArticles,
-  CardTime,
-  SectionTwoContent,
-  CardPoster,
-  CardSectionSixHeading as CardSectionSixHeading,
-  CardSectionSixPicture,
-  CardSectionEight,
-  CardSectionEightPicture,
-} from "../card";
-import {
-  Author,
-  ButtonSubmit,
-  FormGet,
-  InputEmail,
-  InputRadio,
-  ItemImage,
-  Label,
-} from "../items";
-import { Section } from "../section";
-import { sideScroll } from "../../utils/scroll";
-import {
-  SectionPosterWrapper,
-  SectionMagazineHeading as CardSectionMagazineHeading,
-  ContentFiveMiddle as CardSectionMagazineContent,
-  SectionFiveWrapper as SectionMagazineContainer,
-} from "./partials";
-import {
-  SubtitleArticle,
-  SubtitleNewsLetter,
-  TagArticle,
-  TitleArticle,
-  TitleNewsLetter,
-} from "../typography";
+"use client";
 
-export const SectionSpread = ({
-  cardNum,
-  data: { left, right, middle },
-}: any) => (
-  <Section cardNum={cardNum}>
-    <div className="Zfw Rz_">
-      <div className="f8u">
-        <CardHeadline data={left} />
-        <div className="net z4K">
-          {right.map((item: any, index: number) => (
-            <CardArticles key={index} data={item} />
-          ))}
-        </div>
-        <div className="og9 lxG">
-          <div className="uOw">
-            {middle.map((item: any) => (
-              <CardTime key={item.title} data={item} />
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </Section>
-);
+import SectionAllArticles from "@/components/sections/allArticles";
+import SectionEight from "@/components/sections/eight";
+import SectionFour from "@/components/sections/four";
+import {
+  SectionMagazine,
+  SectionMagazineInverted,
+} from "@/components/sections/magazine";
+import SectionNewsLetter from "@/components/sections/newsletter";
+import SectionPosters from "@/components/sections/posters";
+import SectionSix from "@/components/sections/six";
+import SectionSpread from "@/components/sections/spread";
+import SectionTwo from "@/components/sections/two";
 
-export const SectionTwo = ({ data }: any) => {
-  const [isChecked, setChecked] = useState("01");
-  const onClick = (e: any) => setChecked(e);
-  const onCheck = (number: string) => {
-    return isChecked === number;
-  };
+export default function SectionBase({ data }: any) {
+  const {
+    first,
+    second,
+    third,
+    four,
+    five,
+    six,
+    seven,
+    eight,
+    ten,
+    nine,
+    eleven,
+    thirteen,
+    fourteen,
+  } = data;
+
   return (
-    <Section cardNum={161523780}>
-      <div className="A_V">
-        <InputRadio onChecked={onCheck("01")} className="Iv6" />
-        <InputRadio onChecked={onCheck("02")} className="c3V" />
-        <InputRadio onChecked={onCheck("03")} className="m_5" />
-        <InputRadio onChecked={onCheck("04")} className="jdg" />
-        <div className="nig">
-          {data.map(({ mobileClassName, num, label }: any, index: number) => (
-            <Label
-              onClick={onClick}
-              key={index}
-              numIndex={index}
-              num={num}
-              className={mobileClassName}
-              title={label}
-            />
-          ))}
-        </div>
-        <div className="brJ">
-          {data.map(({ className, num, data, label }: any) => (
-            <div key={className} className={cx(`moS ${className}`)}>
-              <SectionTwoContent
-                onClick={onClick}
-                num={num}
-                data={data}
-                label={label}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </Section>
+    <>
+      <SectionSpread data={first} cardNum={161523783} />
+      <SectionTwo data={second} />
+      <SectionPosters data={third} />
+      <SectionFour data={four} />
+      <SectionMagazineInverted
+        data={five}
+        cardNum={161523772}
+        title="Entertainment"
+        subtitle="Celebrity News"
+      />
+      <SectionSix data={six} />
+      <SectionMagazine
+        cardNum={161523773}
+        title="Style"
+        subtitle="Beauty News"
+        data={seven}
+      />
+      <SectionEight data={eight} />
+      <SectionMagazineInverted
+        data={nine}
+        cardNum={161523775}
+        title="Wellness"
+        subtitle="Mental Health"
+      />
+      <SectionNewsLetter data={ten} />
+      <SectionMagazine
+        data={eleven}
+        cardNum={161523773}
+        title="Life"
+        subtitle="Tech"
+      />
+      <SectionEight data={eight} />
+      <SectionMagazineInverted
+        data={thirteen}
+        cardNum={161523778}
+        title="Rule Breakers"
+        subtitle="Tech"
+      />
+      <SectionAllArticles data={fourteen} />
+    </>
   );
-};
-
-export const SectionPosters = ({ data }: any) => {
-  const contentWrapper = useRef<HTMLDivElement | null>(null);
-  return (
-    <SectionPosterWrapper title="Bustle Originals">
-      <button
-        title="Previous page"
-        className="odm m8M"
-        tabIndex={-1}
-        disabled={true}
-      />
-      <button
-        title="Next page"
-        className="odm xR8"
-        tabIndex={-1}
-        onClick={() => {
-          sideScroll(contentWrapper?.current, 25, 100, 720);
-        }}
-      />
-      <div className="yTZ" ref={contentWrapper}>
-        <div className="bVG"></div>
-        {data.map((item: any, index: number) => (
-          <CardPoster key={index} data={item} />
-        ))}
-        <div className="Nyt pzW"></div>
-        <div className="bVG"></div>
-      </div>
-    </SectionPosterWrapper>
-  );
-};
-
-export const SectionFour = ({ data: { title, image } }: any) => (
-  <Section cardNum={161523785}>
-    <div className="T8A">
-      <div className="gsz G2w">
-        <header className="KfF">
-          <div className="Psy gnY"></div>
-          <h1 className="aVX Kca IhL uFd">{title}</h1>
-          <div className="r87 dYp">
-            <p>
-              <a href="https://www.bustle.com/health-wellness-issue-2022">
-                <strong>Read more</strong>
-              </a>
-            </p>
-          </div>
-        </header>
-        <div className="u4k">
-          <div className="vmZ oL7 YOh">
-            <ItemImage image={image} className="fpC XBl" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </Section>
-);
-
-export const SectionMagazine = ({ title, subtitle, cardNum, data }: any) => (
-  <Section cardNum={cardNum}>
-    <SectionMagazineContainer>
-      <CardSectionMagazineHeading title={title} />
-      <CardSectionMagazineContent
-        title={subtitle}
-        data={data}
-        orderTime="yHP"
-        orderArticles="Kf6"
-        orderHeading="FpW"
-      />
-    </SectionMagazineContainer>
-  </Section>
-);
-
-export const SectionMagazineInverted = ({
-  title,
-  subtitle,
-  cardNum,
-  data,
-}: any) => (
-  <Section cardNum={cardNum}>
-    <SectionMagazineContainer>
-      <CardSectionMagazineHeading className="Egy" title={title} />
-      <CardSectionMagazineContent
-        title={subtitle}
-        data={data}
-        orderTime="QXt"
-        orderArticles="GY8"
-        orderHeading="uji"
-      />
-    </SectionMagazineContainer>
-  </Section>
-);
-
-export const SectionSix = ({ data: { content, picture } }: any) => (
-  <Section cardNum={161523787}>
-    <div className="w9K Mnx">
-      <div className="mRp">
-        <a
-          href="/style/how-the-all-new-genesis-g90-takes-korean-design-to-an-audacious-new-level"
-          className="Hof"
-        ></a>
-        <div className="rHN cCV">
-          <div className="sWr">
-            <div className="cUF">
-              <div className="gsz fQd">
-                <CardSectionSixHeading data={content} />
-                <CardSectionSixPicture data={picture} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </Section>
-);
-
-export const SectionEight = ({ data: { content, picture } }: any) => (
-  <Section cardNum={161523774}>
-    <div className="w9K Mnx">
-      <div className="mRp y-m">
-        <a
-          href="/style/how-the-all-new-genesis-g90-takes-korean-design-to-an-audacious-new-level"
-          className="Hof"
-        ></a>
-        <div className="rHN cCV">
-          <div className="sWr">
-            <div className="T8A">
-              <div className="gsz G2w I0j">
-                <CardSectionEight data={content} />
-                <CardSectionEightPicture data={picture} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </Section>
-);
-
-export const SectionNewsLetter = ({
-  data: { title, subtitle, submit },
-}: any) => (
-  <Section cardNum={161523761}>
-    <div className="j1J sK1">
-      <div className="lV1">
-        <div className="yLP">
-          <div className="bHV">
-            <TitleNewsLetter>{title}</TitleNewsLetter>
-            <SubtitleNewsLetter>{subtitle}</SubtitleNewsLetter>
-            <FormGet action="https://newsletter.bustle.com/signup">
-              <input name="site" type="hidden" value="BUSTLE" />
-              <input name="source" type="hidden" value="NewsletterCard" />
-              <input name="primaryNewsletter" type="hidden" value="bustle" />
-              <div className="r-Z">
-                <div className="mI6">
-                  <InputEmail />
-                </div>
-                <ButtonSubmit>{submit}</ButtonSubmit>
-              </div>
-            </FormGet>
-          </div>
-        </div>
-      </div>
-    </div>
-  </Section>
-);
-
-export const SectionAllArticles = ({ data }: any) => (
-  <Section cardNum={161523781}>
-    <div className="bw8 tTD">
-      <div className="fjo">
-        <div className="Ouv">
-          {data.map((item: any) => (
-            <CardArticle key={item.title} data={item} />
-          ))}
-        </div>
-      </div>
-    </div>
-  </Section>
-);
-
-export const CardArticle = ({
-  data: { href, title, subtitle, tag, author, image },
-}: any) => (
-  <a href={href} className="AYM iH0">
-    <div className="f_s gGe">
-      <div style={{ paddingTop: "100%" }} className="vmZ KlX oIZ ap2">
-        <ItemImage image={image} className="Toq" sizesNum="123" />
-      </div>
-    </div>
-    <div className="J1w">
-      <div className="nRE">
-        <TagArticle className="wPh">{tag}</TagArticle>
-      </div>
-
-      <TitleArticle>{title}</TitleArticle>
-    </div>
-    <div className="hiy">
-      <SubtitleArticle>{subtitle}</SubtitleArticle>
-      <Author className="atc" data={author}></Author>
-    </div>
-  </a>
-);
+}

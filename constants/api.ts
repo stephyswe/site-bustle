@@ -17,7 +17,7 @@ import {
 
 export const urlSite = "https://imgix.bustle.com/uploads/image";
 
-export const allData = {
+export const data = {
   first: dataSectionOne,
   second: dataSectionTwo,
   third: dataSectionThree,

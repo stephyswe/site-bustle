@@ -1,4 +1,4 @@
-import { urlSite } from "../../constants/api";
+import { urlSite } from "../../../constants/api";
 
 export function handleUrlSite(urlSite: any, srcFolder: any) {
   let orgUrlSite = urlSite;

@@ -1,6 +1,6 @@
-import type { NextPage } from "next";
 import { Fragment } from "react";
-import { Video } from "../../components/items";
+
+import { Video } from "../../components/items/video";
 import { Header } from "../../components/layout/header";
 import { dataArticle } from "../../constants/article";
 
@@ -24,7 +24,7 @@ const moreDataArticle = {
   },
 };
 
-const Article: NextPage = () => {
+const Article = () => {
   const { top } = moreDataArticle;
   return (
     <div>
