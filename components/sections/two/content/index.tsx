@@ -22,14 +22,14 @@ const SectionTwoContent = ({
     <div className="iRG">
       <div className="mNi">
         <div className="IA_">
-          {/* <div className="wZQ">
+          <div className="wZQ">
             {links.map(({ title, href }: any) => (
               <a key={title} href={href} className="wLh">
                 <SectionTwoContentTitle>{title}</SectionTwoContentTitle>
                 <div className="_yv"></div>
               </a>
             ))}
-          </div> */}
+          </div>
         </div>
         <CardSectionTwo data={data} />
       </div>
