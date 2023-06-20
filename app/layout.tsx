@@ -1,6 +1,8 @@
 // css
 import Head from "next/head";
 
+import { Header } from "@/components/layout/header";
+
 import "../styles/article.css";
 import "../styles/common.css";
 import "../styles/globals.css";
@@ -21,7 +23,10 @@ export default async function RootLayout({ children }: LayoutProps) {
       <Head>
         <title>{metadata.title}</title>
       </Head>
-      <body style={{ ["--viewportHeight" as any]: "465px" }}>{children}</body>
+      <body style={{ ["--viewportHeight" as any]: "465px" }}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

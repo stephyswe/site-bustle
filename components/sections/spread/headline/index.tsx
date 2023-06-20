@@ -1,5 +1,6 @@
 import { ItemImage } from "@/components/items";
 import { Author } from "@/components/items/author";
+import BustleLink from "@/components/items/link";
 import Typography from "@/components/items/typography";
 import { Video } from "@/components/items/video";
 
@@ -25,7 +26,7 @@ const VideoOrImage = ({ image, videoSrc, videoParentStyle }: any) => {
 const CardHeadline = ({
   data: { image, title, subtitle, author, href, videoSrc },
 }: any) => (
-  <a href={href} className="Fh8 PYF">
+  <BustleLink href={href} className="Fh8 PYF">
     <div className="O-E cNR">
       <VideoOrImage
         image={image}
@@ -43,7 +44,7 @@ const CardHeadline = ({
       </Typography>
       <Author data={author} />
     </div>
-  </a>
+  </BustleLink>
 );
 
 export default CardHeadline;
