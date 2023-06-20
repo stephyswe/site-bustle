@@ -8,7 +8,7 @@ export const Logo = () => {
         </div>
       </div>
       <div style={{ color: "var(--slot1)" }} className="Bzv">
-        Oct. 1, 2022
+        June 20, 2023
       </div>
     </a>
   );
@@ -17,7 +17,7 @@ export const Logo = () => {
 export const LogoBustle = () => (
   <svg
     style={{
-      color: "rgb(65, 17, 18)",
+      color: "rgb(26, 26, 26)",
     }}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 2651 719"

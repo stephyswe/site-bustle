@@ -1,4 +1,4 @@
-import { urlSite } from "../../../constants/api";
+const urlSite = "https://imgix.bustle.com/uploads/image";
 
 export function handleUrlSite(urlSite: any, srcFolder: any) {
   let orgUrlSite = urlSite;
