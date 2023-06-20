@@ -93,5 +93,79 @@
         }
       }
     ]
-  }
+  },
+  "dataSectionTwo": [
+    {
+      "className": "Ont",
+      "mobileClassName": "A_d",
+      "num": "01",
+      "label": "Amplifying Our Voices",
+      "data": {
+        "title": "Theophilio\u2019s Edvin Thompson On Ice Spice's Eras Tour Jumpsuit",
+        "subtitle": "He tells Bustle the inspiration behind one of 2023\u2019s buzziest looks.",
+        "author": ["Alyssa Lapid"],
+        "href": "/style/edvin-thompson-theophilio-ice-spice-eras-tour-jumpsuit",
+        "image": {
+          "alt": "",
+          "src": "https://imgix.bustle.com/uploads/image/2023/6/15/7c2aedd6-8519-41c6-abc0-5f69195a0c8b-fitcheck_theophilio_teaser.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress",
+          "sets": "https://imgix.bustle.com/uploads/image/2023/6/15/7c2aedd6-8519-41c6-abc0-5f69195a0c8b-fitcheck_theophilio_teaser.jpg?w=197&h=197&fit=crop&crop=faces&auto=format%2Ccompress 197w, https://imgix.bustle.com/uploads/image/2023/6/15/7c2aedd6-8519-41c6-abc0-5f69195a0c8b-fitcheck_theophilio_teaser.jpg?w=197&h=197&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 394w, https://imgix.bustle.com/uploads/image/2023/6/15/7c2aedd6-8519-41c6-abc0-5f69195a0c8b-fitcheck_theophilio_teaser.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress 540w, https://imgix.bustle.com/uploads/image/2023/6/15/7c2aedd6-8519-41c6-abc0-5f69195a0c8b-fitcheck_theophilio_teaser.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 1080w, https://imgix.bustle.com/uploads/image/2023/6/15/7c2aedd6-8519-41c6-abc0-5f69195a0c8b-fitcheck_theophilio_teaser.jpg?w=342&h=257&fit=crop&crop=faces&auto=format%2Ccompress 342w, https://imgix.bustle.com/uploads/image/2023/6/15/7c2aedd6-8519-41c6-abc0-5f69195a0c8b-fitcheck_theophilio_teaser.jpg?w=342&h=257&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 684w",
+          "sizes": "(min-width:1025px) 540px, (min-width:768px) 342px, 197px"
+        }
+      }
+    },
+    {
+      "className": "fCW",
+      "mobileClassName": "nYi",
+      "num": "02",
+      "label": "Beauty Detail",
+      "data": {
+        "title": "Meghan Trainor's Go-To Thickening Spray Is \"Like Medicine For Your Hair\"",
+        "subtitle": "The star chats with Bustle.",
+        "author": ["Olivia Rose Rushing"],
+        "href": "/style/meghan-trainor-hair-care",
+        "image": {
+          "alt": "",
+          "src": "https://imgix.bustle.com/uploads/image/2023/5/3/3d39d353-423c-4565-b96d-df93fc435f7d-meghantrainor_teaser.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress",
+          "sets": "https://imgix.bustle.com/uploads/image/2023/5/3/3d39d353-423c-4565-b96d-df93fc435f7d-meghantrainor_teaser.jpg?w=197&h=197&fit=crop&crop=faces&auto=format%2Ccompress 197w, https://imgix.bustle.com/uploads/image/2023/5/3/3d39d353-423c-4565-b96d-df93fc435f7d-meghantrainor_teaser.jpg?w=197&h=197&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 394w, https://imgix.bustle.com/uploads/image/2023/5/3/3d39d353-423c-4565-b96d-df93fc435f7d-meghantrainor_teaser.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress 540w, https://imgix.bustle.com/uploads/image/2023/5/3/3d39d353-423c-4565-b96d-df93fc435f7d-meghantrainor_teaser.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 1080w, https://imgix.bustle.com/uploads/image/2023/5/3/3d39d353-423c-4565-b96d-df93fc435f7d-meghantrainor_teaser.jpg?w=342&h=257&fit=crop&crop=faces&auto=format%2Ccompress 342w, https://imgix.bustle.com/uploads/image/2023/5/3/3d39d353-423c-4565-b96d-df93fc435f7d-meghantrainor_teaser.jpg?w=342&h=257&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 684w",
+          "sizes": "(min-width:1025px) 540px, (min-width:768px) 342px, 197px"
+        }
+      }
+    },
+    {
+      "className": "ukR",
+      "mobileClassName": "IQY",
+      "num": "03",
+      "label": "28",
+      "data": {
+        "title": "At 28, Tamron Hall Was Stalking Oprah At The Food Court",
+        "subtitle": "The talk show host also reveals why she calls her 28-year-old self \u201cthe knockoff Jennifer Aniston.\u201d",
+        "author": ["Brad Witter"],
+        "href": "/entertainment/tamron-hall-signature-haircut-leaving-today-life-at-28",
+        "image": {
+          "alt": "",
+          "src": "https://imgix.bustle.com/uploads/image/2023/4/28/473a2f83-8e0a-4f74-b91f-5e65ea422cbc-28-tamronhall_header.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress",
+          "sets": "https://imgix.bustle.com/uploads/image/2023/4/28/473a2f83-8e0a-4f74-b91f-5e65ea422cbc-28-tamronhall_header.jpg?w=197&h=197&fit=crop&crop=faces&auto=format%2Ccompress 197w, https://imgix.bustle.com/uploads/image/2023/4/28/473a2f83-8e0a-4f74-b91f-5e65ea422cbc-28-tamronhall_header.jpg?w=197&h=197&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 394w, https://imgix.bustle.com/uploads/image/2023/4/28/473a2f83-8e0a-4f74-b91f-5e65ea422cbc-28-tamronhall_header.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress 540w, https://imgix.bustle.com/uploads/image/2023/4/28/473a2f83-8e0a-4f74-b91f-5e65ea422cbc-28-tamronhall_header.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 1080w, https://imgix.bustle.com/uploads/image/2023/4/28/473a2f83-8e0a-4f74-b91f-5e65ea422cbc-28-tamronhall_header.jpg?w=342&h=257&fit=crop&crop=faces&auto=format%2Ccompress 342w, https://imgix.bustle.com/uploads/image/2023/4/28/473a2f83-8e0a-4f74-b91f-5e65ea422cbc-28-tamronhall_header.jpg?w=342&h=257&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 684w",
+          "sizes": "(min-width:1025px) 540px, (min-width:768px) 342px, 197px"
+        }
+      }
+    },
+    {
+      "className": "ONE",
+      "mobileClassName": "WIq",
+      "num": "04",
+      "label": "Chill Chat",
+      "data": {
+        "title": "Anna Richardson Is Ready To Put On Her Agony Aunt Hat",
+        "subtitle": "The TV presenter on self-care, nudity, and her new podcast.",
+        "author": ["El Hunt"],
+        "href": "/wellness/anna-richardson-self-care-mental-health-naked-attraction-podcast",
+        "image": {
+          "alt": "",
+          "src": "https://imgix.bustle.com/uploads/image/2023/4/13/63594cbb-64ee-4ab2-a330-1a280b70c123-chillchat_teaser.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress",
+          "sets": "https://imgix.bustle.com/uploads/image/2023/4/13/63594cbb-64ee-4ab2-a330-1a280b70c123-chillchat_teaser.jpg?w=197&h=197&fit=crop&crop=faces&auto=format%2Ccompress 197w, https://imgix.bustle.com/uploads/image/2023/4/13/63594cbb-64ee-4ab2-a330-1a280b70c123-chillchat_teaser.jpg?w=197&h=197&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 394w, https://imgix.bustle.com/uploads/image/2023/4/13/63594cbb-64ee-4ab2-a330-1a280b70c123-chillchat_teaser.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress 540w, https://imgix.bustle.com/uploads/image/2023/4/13/63594cbb-64ee-4ab2-a330-1a280b70c123-chillchat_teaser.jpg?w=540&h=405&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 1080w, https://imgix.bustle.com/uploads/image/2023/4/13/63594cbb-64ee-4ab2-a330-1a280b70c123-chillchat_teaser.jpg?w=342&h=257&fit=crop&crop=faces&auto=format%2Ccompress 342w, https://imgix.bustle.com/uploads/image/2023/4/13/63594cbb-64ee-4ab2-a330-1a280b70c123-chillchat_teaser.jpg?w=342&h=257&fit=crop&crop=faces&auto=format%2Ccompress&q=50&dpr=2 684w",
+          "sizes": "(min-width:1025px) 540px, (min-width:768px) 342px, 197px"
+        }
+      }
+    }
+  ]
 }

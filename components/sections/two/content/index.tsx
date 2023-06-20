@@ -1,5 +1,6 @@
 import { ItemImage } from "@/components/items";
 import { Author } from "@/components/items/author";
+import { ItemNewImage } from "@/components/items/image";
 import Typography from "@/components/items/typography";
 
 const SectionTwoContent = ({
@@ -21,14 +22,14 @@ const SectionTwoContent = ({
     <div className="iRG">
       <div className="mNi">
         <div className="IA_">
-          <div className="wZQ">
+          {/* <div className="wZQ">
             {links.map(({ title, href }: any) => (
               <a key={title} href={href} className="wLh">
                 <SectionTwoContentTitle>{title}</SectionTwoContentTitle>
                 <div className="_yv"></div>
               </a>
             ))}
-          </div>
+          </div> */}
         </div>
         <CardSectionTwo data={data} />
       </div>
@@ -52,7 +53,7 @@ const CardSectionTwo = ({
     </div>
     <div className="yMG">
       <div className="vmZ Dsq">
-        <ItemImage image={image} sizesNum="197" overwriteCompress="540b" />
+        <ItemNewImage image={image} />
       </div>
     </div>
   </a>

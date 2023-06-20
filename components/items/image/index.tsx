@@ -25,7 +25,7 @@ export const ItemNewImage = ({
 }: any) => (
   <img
     alt={alt}
-    className={cn(`${className} EdX`)}
+    className={cn(className, "EdX")}
     decoding="async"
     src={src}
     srcSet={sets}

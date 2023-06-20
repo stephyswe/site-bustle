@@ -12,6 +12,7 @@ interface DataSectionOne {
 
 interface MyData {
   dataSectionOne: DataSectionOne;
+  dataSectionTwo: any; // Replace 'any' with the actual type
   [key: string]: any; // This allows for additional, unknown properties
 }
 
@@ -26,6 +27,7 @@ const mergedData: MyData = {
     middle: jsonDataImport.dataSectionOne.middle,
     right: jsonDataImport.dataSectionOne.right,
   },
+  dataSectionTwo: jsonDataImport.dataSectionTwo,
 };
 
 export default function Home() {
