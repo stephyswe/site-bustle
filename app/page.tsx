@@ -7,6 +7,7 @@ import data from "../constants/data";
 interface DataSectionOne {
   left: any; // Replace 'any' with the actual type
   middle: any; // Replace 'any' with the actual type
+  right: any; // Replace 'any' with the actual type
 }
 
 interface MyData {
@@ -23,10 +24,9 @@ const mergedData: MyData = {
     ...importData.dataSectionOne,
     left: jsonDataImport.dataSectionOne.left,
     middle: jsonDataImport.dataSectionOne.middle,
+    right: jsonDataImport.dataSectionOne.right,
   },
 };
-
-console.log("data", mergedData);
 
 export default function Home() {
   return (

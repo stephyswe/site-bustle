@@ -19,6 +19,20 @@ export const ItemImage = ({
   />
 );
 
+export const ItemNewImage = ({
+  className,
+  image: { alt = "", src, sets, sizes },
+}: any) => (
+  <img
+    alt={alt}
+    className={cn(`${className} EdX`)}
+    decoding="async"
+    src={src}
+    srcSet={sets}
+    sizes={sizes}
+  />
+);
+
 /*
 function automateArray(string) {
   const newArray = string.split(",")
