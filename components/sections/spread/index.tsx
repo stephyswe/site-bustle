@@ -1,7 +1,7 @@
 import CardArticles from "@/components/card/articles";
-import CardHeadline from "@/components/sections/spread/headline";
 import CardTime from "@/components/card/time";
 import { Section } from "@/components/section";
+import CardHeadline from "@/components/sections/spread/headline";
 
 const SectionSpread = ({ cardNum, data: { left, right, middle } }: any) => (
   <SectionSpreadBase

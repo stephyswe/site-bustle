@@ -1,10 +1,16 @@
 import { ItemImage } from "@/components/items";
 import { Author } from "@/components/items/author";
+import { ItemNewImage } from "@/components/items/image";
 import BustleLink from "@/components/items/link";
 import Typography from "@/components/items/typography";
 import { Video } from "@/components/items/video";
 
-const VideoOrImage = ({ image, videoSrc, videoParentStyle }: any) => {
+export const VideoOrImage = ({
+  image,
+  videoSrc,
+  videoParentStyle,
+  imageParentStyle,
+}: any) => {
   if (videoSrc) {
     return (
       <Video
@@ -16,15 +22,15 @@ const VideoOrImage = ({ image, videoSrc, videoParentStyle }: any) => {
     );
   } else {
     return (
-      <div style={{ paddingTop: "100%" }} className="vmZ tW7 ap2">
-        <ItemImage image={image} sizesNum="374" />
+      <div style={imageParentStyle} className="vmZ tW7 ap2">
+        <ItemNewImage image={image} />
       </div>
     );
   }
 };
 
 const CardHeadline = ({
-  data: { image, title, subtitle, author, href, videoSrc },
+  data: { image, title, subtitle, author, href, videoSrc, tag },
 }: any) => (
   <BustleLink href={href} className="Fh8 PYF">
     <div className="O-E cNR">
@@ -34,7 +40,9 @@ const CardHeadline = ({
         videoParentStyle={{ paddingTop: "107.356%" }}
       />
     </div>
-    <div className="Trd"></div>
+    <Typography type="tag" variant="default">
+      {tag}
+    </Typography>
     <Typography type="title" variant="default">
       {title}
     </Typography>
