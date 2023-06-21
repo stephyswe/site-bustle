@@ -5,6 +5,11 @@ import Typography from "@/components/items/typography";
 import { VideoOrImage } from "@/components/sections/spread/headline";
 import cssToJs from "@/utils/cssToJs";
 
+export const htmlText = (text: any) => {
+  if (typeof text !== "string") return text;
+  return <span dangerouslySetInnerHTML={{ __html: text }} />;
+};
+
 const CardArticles = ({
   data: { style, tag, title, subtitle, href, image, author, videoSrc },
 }: any) => {

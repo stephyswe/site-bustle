@@ -1,6 +1,8 @@
 import cn from "classnames";
 import React, { FC } from "react";
 
+import { htmlText } from "@/components/card/articles";
+
 type Type = "subtitle" | "title" | "tag";
 type Variant = "default" | "article" | "time" | "cardSectionTwo";
 
@@ -56,6 +58,9 @@ const Typography: FC<Props> = ({ type, variant, children, className }) => {
       </div>
     );
   }
+
+  if (type === "subtitle")
+    return <Wrapper className={allClasses}>{htmlText(children)}</Wrapper>;
 
   return <Wrapper className={allClasses}>{children}</Wrapper>;
 };
