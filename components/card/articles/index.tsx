@@ -16,8 +16,8 @@ const CardArticles = ({
         <VideoOrImage
           image={image}
           videoSrc={videoSrc}
-          videoParentStyle={{ paddingTop: "107.356%" }}
-          imageParentStyle={cssToJs(style)}
+          videoParentStyle={style ? cssToJs(style) : { paddingTop: "107.356%" }}
+          imageParentStyle={style ? cssToJs(style) : null}
         />
       </div>
       <Typography type="tag" variant="default">
