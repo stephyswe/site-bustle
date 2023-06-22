@@ -1,5 +1,14 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 export const Logo = () => {
+  // date
+  let date = new Date();
+  let options = {
+    year: "numeric" as const,
+    month: "long" as const,
+    day: "numeric" as const,
+  };
+  let formattedDate = date.toLocaleDateString("en-US", options); // Output: June 20, 2023
+
   return (
     <a href="/" title="Bustle">
       <div className="F74 lZk">
@@ -8,7 +17,7 @@ export const Logo = () => {
         </div>
       </div>
       <div style={{ color: "var(--slot1)" }} className="Bzv">
-        June 20, 2023
+        {formattedDate}
       </div>
     </a>
   );

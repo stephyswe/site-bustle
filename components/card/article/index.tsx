@@ -11,6 +11,7 @@ const CardArticle = ({
         <ItemImage image={image} className="Toq" sizesNum="123" />
       </div>
     </div>
+
     <div className="J1w">
       <div className="nRE">
         <Typography type="tag" variant="article" className="wPh">
